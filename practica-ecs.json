@@ -1,7 +1,4 @@
-{
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:121370026591:task-definition/practica-ecs:1",
-  "containerDefinitions": [
-    {
+ {
       "name": "practica-ecs",
       "image": "121370026591.dkr.ecr.us-east-1.amazonaws.com/practica-ecs@sha256:3b59e647636986b4821f0507ad20725e5b4932d2edf237fa78de415682964d53",
       "cpu": 0,
