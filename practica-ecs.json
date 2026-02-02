@@ -89,6 +89,5 @@
   },
   "registeredAt": "2026-01-27T18:08:57.826Z",
   "registeredBy": "arn:aws:sts::121370026591:assumed-role/voclabs/user2862592=Aar__n_Arroyos_Ballar__n",
-  "enableFaultInjection": false,
   "tags": []
 }
