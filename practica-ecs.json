@@ -1,94 +1,31 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:887907365641:task-definition/practica-ecs:1",
-    "containerDefinitions": [
-        {
-            "name": "mostrar-electric-border",
-            "image": "887907365641.dkr.ecr.us-east-1.amazonaws.com/practica-ecs@sha256:84cc45635748f34a9280754bbe095471831e7f0f7119da5f91fe4729fee27fca",
-            "cpu": 0,
-            "portMappings": [
-                {
-                    "name": "mostrar-electric-border-80-tcp",
-                    "containerPort": 80,
-                    "hostPort": 80,
-                    "protocol": "tcp",
-                    "appProtocol": "http"
-                }
-            ],
-            "essential": true,
-            "environment": [],
-            "environmentFiles": [],
-            "mountPoints": [],
-            "volumesFrom": [],
-            "ulimits": [],
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "/ecs/practica-ecs",
-                    "awslogs-create-group": "true",
-                    "awslogs-region": "us-east-1",
-                    "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
-            },
-            "systemControls": []
-        }
-    ],
-    "family": "practica-ecs",
-    "taskRoleArn": "arn:aws:iam::887907365641:role/LabRole",
-    "executionRoleArn": "arn:aws:iam::887907365641:role/LabRole",
-    "networkMode": "awsvpc",
-    "revision": 1,
-    "volumes": [],
-    "status": "ACTIVE",
-    "requiresAttributes": [
-        {
-            "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-        },
-        {
-            "name": "ecs.capability.execution-role-awslogs"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.ecr-auth"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
-        },
-        {
-            "name": "ecs.capability.execution-role-ecr-pull"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-        },
-        {
-            "name": "ecs.capability.task-eni"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
-        }
-    ],
-    "placementConstraints": [],
-    "compatibilities": [
-        "EC2",
-        "MANAGED_INSTANCES",
-        "FARGATE"
-    ],
-    "requiresCompatibilities": [
-        "FARGATE"
-    ],
-    "cpu": "1024",
-    "memory": "3072",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
+  "name": "practica-ecs",
+  "image": "121370026591.dkr.ecr.us-east-1.amazonaws.com/practica-ecs@sha256:3b59e647636986b4821f0507ad20725e5b4932d2edf237fa78de415682964d53",
+  "cpu": 0,
+  "portMappings": [
+    {
+      "name": "practica-ecs-80-tcp",
+      "containerPort": 80,
+      "hostPort": 80,
+      "protocol": "tcp",
+      "appProtocol": "http"
+    }
+  ],
+  "essential": true,
+  "environment": [],
+  "environmentFiles": [],
+  "mountPoints": [],
+  "volumesFrom": [],
+  "ulimits": [],
+  "logConfiguration": {
+    "logDriver": "awslogs",
+    "options": {
+      "awslogs-group": "/ecs/practica-ecs",
+      "awslogs-create-group": "true",
+      "awslogs-region": "us-east-1",
+      "awslogs-stream-prefix": "ecs"
     },
-    "registeredAt": "2026-01-26T08:27:41.254Z",
-    "registeredBy": "arn:aws:sts::887907365641:assumed-role/voclabs/user2862592=Aar__n_Arroyos_Ballar__n",
-    "enableFaultInjection": false,
-    "tags": []
+    "secretOptions": []
+  },
+  "systemControls": []
 }
